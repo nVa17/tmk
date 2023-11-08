@@ -1,0 +1,7 @@
+---
+- hosts: test_host
+  tasks:
+    - name: install foo.deb or foo.rpm from enabled repo with this package
+      package:
+        name: foo
+        state: present
